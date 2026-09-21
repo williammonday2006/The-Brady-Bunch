@@ -9,3 +9,8 @@ I used a `Row` to place three characters side-by-side and wrapped each `BradyTil
 # Phase 3
 
 I used a `Column` containing three `Row` widgets to create the 3x3 layout. `Expanded` divides the height between the rows and the width between the tiles in each row. This demonstrates “constraints go down, sizes go up” because the `Column` controls the rows' available height, while each `Row` controls the available width for its tiles.
+
+### Phase 4
+
+I replaced the nested `Row` and `Column` widgets with `GridView.count`. Setting `crossAxisCount` to 3 automatically creates three columns and makes the layout much simpler. The `Row` and `Column` approach provides more direct control over the layout, while `GridView` is easier to write and maintain for a simple grid. 
+
